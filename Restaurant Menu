@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blueberry Cafe Menu and Order</title>
+    <style>
+      * {
+        background-color: aliceblue;
+        font-family: Monospace;
+        font-size: 19px;
+
+      }
+      
+      h1 {
+        font-family: Monospace;
+        color: midnightblue;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        background-color: lightcyan;
+      }
+      
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      
+      
+      nav {
+        text-align: center;
+      }
+      
+      h2 {
+        font-size: 30px;
+        color: midnightblue;
+        background-color: lightcyan;
+        text-align: center;
+      }
+      
+      .img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .description {
+        display: flex;
+        align-items: center;
+      }
+      
+      .description img {
+        margin-right: 20px;
+      }
+      
+      .menu-name {
+        font-size: 20px;
+        font-family: Monospace;
+        font-weight: bold;
+        color: steelblue;
+      }
+      
+      hr {
+        border: none;
+        height: 3px;
+        width: 90%;
+        background-color: steelblue;
+      }
+      
+      fieldset {
+        border: 2px solid steelblue;
+      }
+      
+      input {
+        border: 2px solid steelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://www.dropbox.com/scl/fi/81myn990shmz2chmea1gh/new-blueberry-cafe-header.jpg?rlkey=sx4cc3y4to71bckbg2ytx0b9i&st=n77elbhh&raw=1" alt="blueberry-cafe-header" width="100%" height="auto" id="header-img">
+      <h1>🫐Blueberry Cafe🫐</h1>
+      <nav>
+        <ul class="inline-list">
+        <li class="list-item"><h3> <a href="#menu">Menu 📋</a></h3></li>
+        <li class="list-item"><h3><a href="#order-form">Order Form 🛒</a></h3></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="menu">Menu</h2>
+        <article>
+          <div class="description">
+          <img src="https://www.dropbox.com/scl/fi/ggjjfgm9pe4hzcx9i4fxh/blueberry-latte.jpg?rlkey=q28a0va8opqzi8onjxr9dwbk5&st=hzevku07&raw=1" alt="blueberry-latte" width="10%" height="auto" class="img">
+          <div>
+          <h3 class="menu-name">Blueberry Latte</h3>
+          <p>A smooth espresso blended with velvety steamed milk and a touch of blueberry syrup, creating a perfect balance of sweet and creamy. Topped with a dusting of blueberry powder for that extra touch.<br/> <i>Price: $5.50</i></p>
+          </div>
+          </div>
+          <hr><br>
+        </article>
+        <article>
+          <div class="description">
+          <img src="https://www.dropbox.com/scl/fi/zv1ojedf22z9hv4dqa1du/blueberry-parfait.jpg?rlkey=zj0k3fjzoqhg5bqkpzbigetak&st=vk5my59d&raw=1" alt="blueberry-parfait" width="10%" height="auto" class="img">
+          <div>
+          <h3 class="menu-name">Blueberry Parfait</h3>
+          <p>A delightful combination of fresh blueberries, layers of creamy yogurt, and crunchy granola. Topped with a drizzle of honey, this parfait is the perfect sweet and healthy treat.<br><i>Price: $6.50</i></p>
+          </div>
+          </div>
+          <hr><br>
+        </article>
+        <article>
+          <div class="description">
+          <img src="https://www.dropbox.com/scl/fi/9q57nz4d1zd2zaivxjvh7/blueberry-cheesecake.jpg?rlkey=bah0ih10kp4isyou1c6u35hbb&st=kgewd41t&raw=1" alt="blueberry-cheesecake" width="10%" height="auto" class="img">
+          <div>
+          <h3 class="menu-name">Blueberry Cheesecake</h3>
+          <p>A rich, creamy cheesecake with a buttery graham cracker crust, finished off with a generous layer of sweet blueberry compote. The perfect dessert for any blueberry lover!<br> <i>Price: $7.00</i></p>
+          </div>
+          </div>
+          <hr><br>
+        </article>
+      </section>
+      <section>
+        <h2 id="order-form">Place Your Order</h2>
+        <form>
+          <!--blueberry Latte-->
+          <div>
+            <label for="blueberry-latte">🫐Blueberry Latte ($5.50):</label>
+            <input id="blueberry-latte" type="number" name="blueberry-latte" min="0" value="0"/>
+          </div>
+          <br>
+          <!--blueberry latte add-ons-->
+          <div>
+            <fieldset>
+              <legend>Blueberry Latte Add-Ons:</legend>
+              <label for="extra-sugar">
+                <input type="radio" id="extra-sugar" name="late-add-ons"/> Extra Sugar
+              </label>
+              <br>
+              <label for="less-sugar">
+                <input type="radio" id="less-sugar" name="late-add-ons"/> Less Sugar
+              </label>
+              <br>
+              <label for="sugar-free">
+                <input type="radio" id="sugar-free" name="late-add-ons"/> Sugar Free
+              </label>
+            </fieldset>
+          </div>
+          <br>
+          <!--blueberry parfait-->
+          <div>
+            <label for="blueberry-parfait">🫐Blueberry Parfait ($6.50)</label>
+            <input type="number" id="blueberry-parfait" name="blueberry-parfait" min="0" value="0"/>
+          </div>
+          <br>
+          <!--blueberry parfait add-ons-->
+          <div>
+            <fieldset>
+              <legend>Blueberry Parfait Add-Ons:</legend>
+              <label for="whipped-cream">
+                <input type="checkbox" id="whipped-cream" name="extra-whipped-cream"/> Whipped Cream
+              </label>
+              <br>
+              <label for="honey">
+                <input type="checkbox" id="honey" name="extra-honey"/> Honey
+              </label>
+              <br>
+              <label for="fruit">
+                <input type="checkbox" id="fruit" name="extra-fruit"/> Fruit
+              </label>
+            </fieldset>
+          </div>
+          <br>
+          <!--blueberry cheesecake-->
+          <div>
+            <label for="blueberry-cheesecake">🫐Blueberry Cheesecake ($7.00):</label>
+            <input type="number" id="blueberry-cheesecake" name="blueberry-cheesecake" min="0" value="0"/>
+          </div>
+          <br>
+          <!--blueberry cheesecake add-ons-->
+          <div>
+            <fieldset>
+              <legend>Blueberry Cheesecake Sauce Add-Ons:</legend>
+              <label for="blueberry-sauce">
+                <input type="checkbox" id="blueberry-sauce" name="sauce-add-ons"/> Blueberry Sauce
+              </label>
+              <br>
+              <label for="maple-syrup">
+                <input type="checkbox" id="maple-syrup" name="sauce-add-ons"/> Maple Syrup
+              </label>
+              <br>
+              <label for="salted-caramel">
+                <input type="checkbox" id="salted-caramel" name="sauce-add-ons"/> Salted Caramel
+              </label>
+            </fieldset>
+          </div>
+          <br>
+          <div>
+            <input type="submit" value="Go To Checkout 💳" style="background-color: lightcyan"/>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love by @Zhara💝</p>
+    </footer>
+  </body>
+</html>
